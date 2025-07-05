@@ -1,0 +1,170 @@
+/* === General === */
+body {
+  background-color: black;
+  margin: 0;
+}
+
+/* === Glass Navbar === */
+.glass-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  text-align: center;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.back-btn {
+  color: white;
+  text-decoration: none;
+  padding: 8px 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-btn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+}
+
+/* === Heading === */
+.main-heading {
+  padding-top: 4rem;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 2rem;
+}
+
+/* === Content Container === */
+.container {
+  padding: 1rem 2rem 0 4rem;
+}
+
+.container h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: grey;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.container p {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+.container ul {
+  padding-left: 1rem;
+  line-height: 2rem;
+}
+
+.container ul li {
+  color: white;
+  line-height: 2rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+}
+
+/* === Links === */
+.container a {
+  color: lightskyblue;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.container a:hover {
+  color: skyblue;
+}
+
+/* === Block Diagram (full width center) === */
+.container img {
+  display: block;
+  width: 25rem;
+  max-width: 600px;
+  margin: 1.2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.container img:hover {
+  transform: scale(1.02);
+}
+
+/* === Image Row for Prototype Views === */
+.image-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.image-row img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.image-row img:hover {
+  transform: scale(1.05);
+}
+
+/* === Mobile Responsive === */
+@media (max-width: 600px) {
+  .main-heading {
+    font-size: 1.3rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+  .container img{
+    width: 20rem;
+  }
+  .container h3 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .container p {
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+  }
+
+  .container ul li {
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+  }
+
+  .container a {
+    font-size: 0.85rem;
+  }
+
+  .back-btn {
+    font-size: 14px;
+    padding: 6px 16px;
+  }
+
+  .image-row img {
+    width: 100%;
+    max-width: 300px;
+  }
+}

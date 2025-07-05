@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Human Following Robot</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Glass Navbar -->
+  <nav class="glass-navbar">
+    <a href="/index.html#projects" class="back-btn">Back to Projects</a>
+  </nav>
+
+  <!-- Main Content -->
+  <p class="main-heading">Human Following Robot</p>
+
+  <div class="container">
+    <section>
+      <h3>Over View</h3>
+      <p>A hardware prototype robot designed to follow human movement using IR sensors. It demonstrates real-time motor control based on sensor input, using Arduino as the brain and a motor driver for actuation.</p>
+    </section>
+
+    <section>
+      <h3>Features</h3>
+      <ul>
+        <li>Real-time input processing with Arduino.</li>
+        <li>IR sensors detect human proximity and direction.</li>
+        <li>Motor driver controls speed and turning.</li>
+        <li>Rotates smoothly using caster wheels.</li>
+        <li>Designed for indoor terrain navigation.</li>
+        <li>Simple and efficient prototype logic.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Hardware Used</h3>
+      <ul>
+        <li>Arduino UNO</li>
+        <li>IR Sensors</li>
+        <li>Motor Driver Module (L298N)</li>
+        <li>DC Gear Motors</li>
+        <li>12V Battery</li>
+        <li>Chassis + Caster Wheel</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Working</h3>
+      <p>The IR sensors detect obstacles or humans ahead. Based on sensor signals, the Arduino sends commands to the motor driver to move forward, stop, or turn. The robot responds instantly to the human position using real-time input from sensors. Smooth rotation is achieved using a rear caster wheel.</p>
+    </section>
+
+    <section>
+      <h3>Block Diagram</h3>
+      <img src="blockdia.png" alt="Block Diagram">
+    </section>
+
+    
+    <section>
+      <h3>What I Learnt</h3>
+      <ul>
+        <li>Arduino programming and real-time decision-making.</li>
+        <li>Motor control using L298N driver module.</li>
+        <li>Sensor-based robotics and obstacle logic.</li>
+        <li>Practical hardware integration and wiring.</li>
+        <li>Designing efficient prototypes for real-world usability.</li>
+      </ul>
+    </section>
+    
+    <section>
+      <h3>Prototype Views</h3>
+      <div class="image-row">
+        <img src="view1.png" alt="Prototype View 1">
+        <img src="view2.png" alt="Prototype View 2">
+        <img src="view3.png" alt="Prototype View 3">
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>
