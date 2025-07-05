@@ -16,20 +16,6 @@ This site showcases who I am, what I do, and some of the projects I’ve worked 
 
 ---
 
-## 📁 Folder Structure
-
-```
-├── index.html
-├── style.css
-├── assets/
-│   ├── images/
-│   └── icons/
-├── README.md
-└── CNAME
-```
-
----
-
 ## 📱 Features
 
 - 🔹 Clean and modern UI
@@ -68,19 +54,13 @@ To run locally:
 ## 📬 Contact
 
 Feel free to connect with me through the **Contact** section on the site  
-or email: `charancheedella@gmail.com`
-
----
-
-## 📸 Preview
-
-![Website Screenshot](./assets/images/preview.png)
+or email: `charancheedella012@gmail.com`
 
 ---
 
 ## 🔖 Credits
 
-Designed & Developed by **Charan Cheedella**  
+Designed & Developed by **Venkata Sai Charan Cheedella**  
 💻 Built as part of personal development and portfolio creation
 
 ---
