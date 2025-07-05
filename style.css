@@ -213,7 +213,7 @@ body {
 
 /* projects section */
 #projects{
-  height: 120vh;
+  height: 130vh;
 }
 #projects h1{
   font-family: 'Montserrat', sans-serif;
@@ -447,7 +447,7 @@ body {
 
 /* projects */
     #projects{
-      height: 230vh;
+      height: 255vh;
     }
     #projects h1{
       font-size: 2rem;
