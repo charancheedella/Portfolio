@@ -96,6 +96,9 @@ body {
   color: #aaa;
   margin-bottom: 10px;
 }
+.content .btn{
+  margin-top: 2rem;
+}
 
 
 /* about me section */
@@ -230,7 +233,7 @@ body {
 }
 .card{
   margin:2rem;
-  height: 20rem;
+  height: 23rem;
   box-shadow: 0.05rem 0.05rem 0.5rem white;
   border-radius: 1.2rem;
 }
@@ -263,6 +266,21 @@ body {
   opacity: 1;
   transition-delay: 2s;
 }
+.skill-set{
+  margin:0.7rem 0;
+}
+.skill-badge{
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  margin: 2px;
+  display: inline-block;
+}
+.card-text{
+  margin-bottom: 0.4rem;
+}
 
 /* contact div line */
 .contact-sep-line{
@@ -274,31 +292,43 @@ body {
 }
 
 /* CONTACT SECTION */
-
 #contact {
-  height: 50vh;
   padding-top: 1.5rem;
+  padding-bottom: 3rem;
+  height: 70vh;
 }
 
-#contact h1 {
+/* Title like "PROJECTS" */
+.contact-title {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   font-weight: 600;
-  margin-left: 2rem;
-  margin-top: 0;
+  color:#ccc;
+  text-align: left;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
+/* Wrapper for contact + form side by side */
+.contact-content-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem 4rem;
+  margin-top: 4rem;
+}
+
+/* CONTACT INFO STYLES */
 .contact-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-  grid-gap: 2rem 2rem;
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
   color: #ffffff;
-  margin-top: 2rem;
-  margin-left: 6rem;
 }
 
 .contact-container div {
@@ -306,25 +336,70 @@ body {
   align-items: center;
   gap: 0.6rem;
 }
-.contact-container i{
+
+.contact-container i {
   font-size: 1.5rem;
   color: #404040;
 }
-.contact-container a{
+
+.contact-container a {
   padding-left: 1.5rem;
   font-size: 1.2rem;
   text-decoration: none;
   color: white;
 }
-.con:hover{
-    font-size: 1.7rem;
-    color: white;
 
+.con:hover {
+  font-size: 1.7rem;
+  color: white;
 }
 
-/* emd-rights */
+/* CONTACT FORM STYLES */
+.contact-form-container {
+  flex: 1;
+  max-width: 500px;
+}
 
-.end-rights{
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+  resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-form button {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #444;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #777;
+}
+
+/* FOOTER CREDITS */
+.end-rights {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -332,14 +407,8 @@ body {
   opacity: 0.6;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
+  margin-top: 3rem;
 }
-
-
-
-
-
-
-
 
 
 
@@ -366,6 +435,10 @@ body {
     .image img {
       width: 250px;
       height: auto;
+    }
+    .content .btn{
+      margin-top: 0.2rem;
+      font-size: 0.7rem;
     }
     #about-me h1{
       font-size: 2rem;
@@ -447,7 +520,7 @@ body {
 
 /* projects */
     #projects{
-      height: 255vh;
+      height: 270vh;
     }
     #projects h1{
       font-size: 2rem;
@@ -457,10 +530,10 @@ body {
     }
     .card{
         margin:0.8rem;
-        height: 20rem;
+        height: 23rem;
     }
     .card-text{
-      margin-bottom: 0.7rem;
+      margin-bottom: 0.4rem;
     }
     .pro-card-container{
       margin-top: 1rem;
@@ -469,32 +542,50 @@ body {
       font-size: 0.9rem;
       padding-top: 0.6rem;
     }
-
-    /* contact */
-     #contact h1{
+/* contact */
+    #contact{
+      height: 100vh;
+    }
+    #contact h1{
       font-size: 2rem;
-      margin: 1.6rem auto;
+      margin: 8rem auto;
       margin-bottom: 1.5rem;
       text-align: center;
     }
-    .contact-container {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-      margin-left: 1rem;
+    .contact-title {
+      text-align: center;
+      margin-left: 0;
     }
-    .contact-container a{
-      font-size:0.9rem ;
-      padding-left: 1rem;
+
+    .contact-content-wrapper {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem 2rem;
+      margin-top: 1rem;
     }
-    .contact-container i{
+
+    .contact-container,
+    .contact-form-container {
+      width: 100%;
+      margin-left: 0;
+    }
+    .contact-container i {
       font-size: 1rem;
     }
 
-    /* end rights */
-    .end-rights{
-      font-size: 0.6rem;
+    .contact-container a {
+      padding-left: 1.3rem;
+      font-size: 0.85rem;
     }
+    .end-rights {
+      font-size: 0.65rem;
+      margin-top: 1rem;
+    }
+    .contact-form input,
+.contact-form textarea,.contact-form button{
+  font-size: 0.8rem;
+}
+
 
 }
 
