@@ -432,8 +432,11 @@ body {
     .content p{
       font-size: 0.9rem;
     }
+    .container{
+        gap:30px;
+    }
     .image img {
-      width: 250px;
+      width: 225px;
       height: auto;
     }
     .content .btn{
