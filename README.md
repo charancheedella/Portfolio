@@ -1,68 +1,65 @@
-# 💼 Personal Portfolio - Charan Cheedella  
+# 💼 Personal Portfolio - Charan Cheedella
 
-Welcome to my personal portfolio website!  
-This site highlights who I am, what I do, and the projects I’ve built. It’s created with **HTML, CSS, and JavaScript**, designed to be responsive, clean, and user-friendly.  
+Welcome to my personal portfolio website! This site highlights who I am, what I do, and the projects I’ve built. It is crafted with modern web standards to be responsive, clean, and user-friendly.
 
-🌐 **Live Website:** [www.charancheedella.xyz](http://www.charancheedella.xyz)  
+## 🌐 Live Website
 
----
-
-## 🛠️ Tech Stack  
-- **HTML5**  
-- **CSS3** (with custom styles & project-specific stylesheets)  
-- **JavaScript** (for interactivity)  
-- **Bootstrap 5** (via CDN)  
-- **GitHub Pages** (for hosting with custom domain)  
+[www.charancheedella.xyz](https://www.charancheedella.xyz)
 
 ---
 
-## 📱 Features  
-- 🔹 Responsive design across devices  
-- 🔹 Dedicated sections:  
-  - Hero / Intro  
-  - About Me  
-  - Project Gallery (multi-page setup inside `/projects`)  
-  - Contact  
-- 🔹 Organized project pages (`pro.html`, `/projects/`)  
-- 🔹 Favicon support for branding  
-- 🔹 Custom domain: **charancheedella.xyz**  
-- 🔹 Deployed via GitHub Pages  
+## 🛠️ Tech Stack
+
+- HTML5  
+- CSS3 (custom & project-specific styles)
+- JavaScript (for interactivity)
+- Bootstrap 5 (via CDN)
+- GitHub Pages (hosting with custom domain)
 
 ---
 
-## 🧠 What I Learned  
-- Building and structuring a multi-page portfolio site  
-- Organizing assets (**HTML, CSS, JS, images**) for scalability  
-- Using responsive layouts without heavy frameworks  
-- Configuring custom domains & DNS records for GitHub Pages  
-- Managing favicon and manifest setup for branding  
+## 📱 Features
+
+- Responsive design across devices
+- Dedicated sections:
+  - Hero / Intro
+  - About Me
+  - Project Gallery (`/projects`)
+  - Contact
+- Organized project pages (`pro.html`, `/projects/`)
+- Favicon support for branding
+- Custom domain: `charancheedella.xyz`
+- Deployed via GitHub Pages
 
 ---
 
-## 🚀 Deployment  
-The site is deployed with **GitHub Pages** and configured with a custom domain.  
+## 🧠 What I Learned
 
-### Run Locally  
-Clone the repo:  
-```bash
-git clone https://github.com/your-username/your-repo-name.git
-Then open index.html in your browser.
+- Structuring and building a multi-page portfolio site
+- Organizing assets (HTML, CSS, JS, images) for scalability
+- Responsive layouts **without heavy frameworks**
+- Custom domains & DNS for GitHub Pages
+- Favicon and manifest configuration for branding
 
-📬 Contact
-You can connect with me through the Contact section on the website.
-📧 Email: charancheedella012@gmail.com
+---
 
-🔖 Credits
-Designed & Developed by Venkata Sai Charan Cheedella
-💻 Built as part of personal growth, internship work, and portfolio showcase.
+## 🚀 Deployment
 
-css
-Copy code
+Deployed with **GitHub Pages** and configured with a custom domain.
 
-Do you also want me to **add shields.io badges (HTML, CSS, JS, Bootstrap, GitHub Pages)** at the top for a professional README look?
+---
 
+## 📬 Contact
 
+- Use the **Contact** section on my website
+- 📧 [charancheedella012@gmail.com](mailto:charancheedella012@gmail.com)
 
+---
 
+## 🔖 Credits
 
+Designed & Developed by **Venkata Sai Charan Cheedella**  
+Built for personal growth, internship experience, and as a portfolio showcase.
+
+---
 
