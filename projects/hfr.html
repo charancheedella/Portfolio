@@ -1,184 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1EEJ1DXKJK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-1EEJ1DXKJK');
-</script>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Primary Title & Description -->
-  <title>Charan Cheedella – Full-Stack Developer & CS Undergraduate</title>
-  <meta name="description" content="Charan Cheedella – Full-Stack Developer & CS student building innovative web apps, AI projects, and digital solutions.">
-
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://www.charancheedella.xyz" />
-
-  <!-- Open Graph / Social Sharing -->
-  <meta property="og:title" content="Charan Cheedella – Full-Stack Developer" />
-  <meta property="og:description" content="Explore Charan's innovative projects and expertise in web development, AI, and software engineering." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.charancheedella.xyz" />
-  <meta property="og:image" content="https://www.charancheedella.xyz/og-image.jpg" />
-  <meta property="og:image:alt" content="Charan Cheedella – Full-Stack Developer" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Charan Cheedella – Full-Stack Developer" />
-  <meta name="twitter:description" content="Explore projects and technical skills by Charan Cheedella, a passionate developer and CS undergraduate." />
-  <meta name="twitter:image" content="https://www.charancheedella.xyz/og-image.jpg" />
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Charan Cheedella",
-    "jobTitle": "Full-Stack Developer",
-    "url": "https://www.charancheedella.xyz",
-    "sameAs": [
-      "https://www.linkedin.com/in/charan-cheedella",
-      "https://github.com/charancheedella"
-    ],
-    "description": "Full-Stack Developer and CS undergraduate passionate about building web solutions that solve real-world problems. Always learning and exploring new technologies."
-  }
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1EEJ1DXKJK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-1EEJ1DXKJK');
   </script>
 
-  <!-- Fonts & Icons -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Human Following Robot · Charan Cheedella</title>
+  <meta name="description" content="A hardware prototype that follows a person around a room, reading IR sensors and steering its motors in real time.">
+  <meta name="author" content="Venkata Sai Charan Cheedella">
+  <meta name="theme-color" content="#e9e5dc">
+  <link rel="canonical" href="https://www.charancheedella.xyz/projects/hfr.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Charan Cheedella">
+  <meta property="og:title" content="Human Following Robot · Charan Cheedella">
+  <meta property="og:description" content="A hardware prototype that follows a person around a room, reading IR sensors and steering its motors in real time.">
+  <meta property="og:url" content="https://www.charancheedella.xyz/projects/hfr.html">
+  <meta property="og:image" content="https://www.charancheedella.xyz/assets/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/icons/site.webmanifest">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!-- Styles -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="stylesheet" href="../assets/css/pro.css">
-    <link rel="stylesheet" href="../assets/css/projects.css">
-  
-
-  <!-- Optional SEO Enhancements -->
-  <meta name="robots" content="index, follow" />
-  <meta name="author" content="Venkata Sai Charan Cheedella" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
-<link rel="manifest" href="/assets/icons/site.webmanifest">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
 </head>
-<body>
-<div id="cursor-glow"></div>
-    
-<!-- nav bar -->
-<header class="nav-bar">
-  <!-- Desktop Nav -->
-  <div class="outer-nav desktop-nav">
-    <a href="../index.html#project-sec" class="nav-sections">Back to Home</a>
-    <a href="../pro.html" class="nav-sections">All Projects</a>
-  </div>
+<body data-page="case">
+  <a class="skip" href="#content">Skip to content</a>
 
-<!-- Mobile Nav -->
-<div class="mobile-nav">
+  <header class="top">
+    <a class="brand" href="../" aria-label="Charan Cheedella, home">Charan Cheedella</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="../#about">About</a>
+      <a href="../#work">Work</a>
+      <a href="../#leadership">Leadership</a>
+      <a href="../#journey">Journey</a>
+      <a href="../#testimonials">Testimonials</a>
+      <a href="../#contact">Contact</a>
+    </nav>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="sheet"><span>Menu</span><b aria-hidden="true"></b></button>
+  </header>
 
-  <button class="menu-toggle"><i class="fas fa-bars"></i></button>
-
-  <a href="../index.html#" class="logo">
-    <img src="../assets/images/brand/logo.png" alt="Charan Logo">
-  </a>
-
-  <!-- Dropdown Menu -->
-  <div class="mobile-menu">
-    <a href="../index.html#" class="nav-sections">Home</a>
-    <a href="../index.html#about-sec" class="nav-sections">About me</a>
-    <a href="../index.html#skill-sec" class="nav-sections">Skills</a>
-    <a href="../index.html#project-sec" class="nav-sections">Projects</a>
-    <a href="../index.html#leadership-sec" class="nav-sections">Leadership</a>
-    <a href="../index.html#journey-sec" class="nav-sections">Journey</a>
-    <a href="../index.html#testimonial-sec" class="nav-sections">Testimonials</a>
-    <a href="../index.html#contact" class="nav-sections">Contact</a>
-  </div>
-</div>
-</header>
-<!-- back buttons -->
-<div class="backbuttonspro">
-    <a href="../index.html#project-sec" class="nav-items">Back to Home</a>
-    <a href="../pro.html" class="nav-items">All projects</a>
-</div>
-
-
-<p class="uq-main-heading">Human Following Robot</p>
-
-<div class="uq-container">
-  <section class="uq-section">
-    <h3>Over View</h3>
-    <p>A hardware prototype robot designed to follow human movement using IR sensors. It demonstrates real-time motor control based on sensor input, using Arduino as the brain and a motor driver for actuation.</p>
-  </section>
-
-  <section class="uq-section">
-    <h3>Features</h3>
-    <ul>
-      <li>Real-time input processing with Arduino.</li>
-      <li>IR sensors detect human proximity and direction.</li>
-      <li>Motor driver controls speed and turning.</li>
-      <li>Rotates smoothly using caster wheels.</li>
-      <li>Designed for indoor terrain navigation.</li>
-      <li>Simple and efficient prototype logic.</li>
-    </ul>
-  </section>
-
-  <section class="uq-section">
-    <h3>Hardware Used</h3>
-    <ul>
-      <li>Arduino UNO</li>
-      <li>IR Sensors</li>
-      <li>Motor Driver Module (L298N)</li>
-      <li>DC Gear Motors</li>
-      <li>12V Battery</li>
-      <li>Chassis + Caster Wheel</li>
-    </ul>
-  </section>
-
-  <section class="uq-section">
-    <h3>Working</h3>
-    <p>The IR sensors detect obstacles or humans ahead. Based on sensor signals, the Arduino sends commands to the motor driver to move forward, stop, or turn. The robot responds instantly to the human position using real-time input from sensors. Smooth rotation is achieved using a rear caster wheel.</p>
-  </section>
-
-  <section class="uq-section">
-    <h3>Block Diagram</h3>
-    <img src="../assets/images/projects/hfr/hfr1.png" alt="Block Diagram">
-  </section>
-
-  <section class="uq-section">
-    <h3>What I Learnt</h3>
-    <ul>
-      <li>Arduino programming and real-time decision-making.</li>
-      <li>Motor control using L298N driver module.</li>
-      <li>Sensor-based robotics and obstacle logic.</li>
-      <li>Practical hardware integration and wiring.</li>
-      <li>Designing efficient prototypes for real-world usability.</li>
-    </ul>
-  </section>
-
-  <section class="uq-section">
-    <h3>Prototype Views</h3>
-    <div class="uq-image-row">
-      <img src="../assets/images/projects/hfr/hfr2.png" alt="Prototype View 1">
-      <img src="../assets/images/projects/hfr/hfr3.png" alt="Prototype View 2">
-      <img src="../assets/images/projects/hfr/hfr4.png" alt="Prototype View 3">
+  <div class="sheet" id="sheet">
+    <ol>
+      <li><a href="../#about">About</a></li>
+      <li><a href="../#work">Work</a></li>
+      <li><a href="../#leadership">Leadership</a></li>
+      <li><a href="../#journey">Journey</a></li>
+      <li><a href="../#testimonials">Testimonials</a></li>
+      <li><a href="../#contact">Contact</a></li>
+    </ol>
+    <div class="sheet-foot">
+      <a href="mailto:charancheedella012@gmail.com">charancheedella012@gmail.com</a>
+      <div class="row">
+        <a href="https://www.linkedin.com/in/charan-cheedella" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/charancheedella" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://wa.me/918309348490" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
     </div>
-  </section>
-</div>
+  </div>
 
+  <main id="content">
+    <section class="case-hero">
+      <div>
+        <a class="back" href="../#work">← All work</a>
+        <h1>Human Following Robot</h1>
+        <p class="lede">A hardware prototype that follows a person around a room, reading IR sensors and steering its motors in real time.</p>
+        <ul class="case-meta">
+          <li><span>No.</span><span>03 of 07</span></li>
+          <li><span>Type</span><span>Hardware</span></li>
+          <li><span>Built with</span><span>Arduino UNO · IR sensors · L298N motor driver · DC gear motors and more</span></li>
+          <li><span>Status</span><span>Prototype</span></li>
+        </ul>
+      </div>
+      <div class="swatch cloth-host" id="swatch" data-color="#161616" data-num="03" data-name="Human Following Robot" data-kind="Hardware">
+        <canvas id="swatch-cloth" aria-hidden="true"></canvas>
+        <div class="rod thin" id="swatch-rod"></div>
+      </div>
+    </section>
 
+    <div class="case-body c-ink">
+      <section class="case-sec sew">
+        <h2>The idea</h2>
+        <p>A small robot that follows human movement using IR sensors. An Arduino reads the sensors and decides what to do, and a motor driver turns those decisions into speed and steering.</p>
+      </section>
 
+      <section class="case-sec sew">
+        <h2>What it does</h2>
+        <ul class="ticks">
+            <li>Real-time input processing on an Arduino.</li>
+            <li>IR sensors detect how close a person is and in which direction.</li>
+            <li>A motor driver controls speed and turning.</li>
+            <li>A rear caster wheel for smooth rotation.</li>
+            <li>Built for indoor floors.</li>
+            <li>Simple, efficient prototype logic.</li>
+        </ul>
+      </section>
 
+      <section class="case-sec sew">
+        <h2>Hardware</h2>
+        <ul class="chips">
+            <li>Arduino UNO</li>
+            <li>IR sensors</li>
+            <li>L298N motor driver</li>
+            <li>DC gear motors</li>
+            <li>12V battery</li>
+            <li>Chassis and caster wheel</li>
+        </ul>
+      </section>
 
-<script src="../assets/js/app.js"></script>
+      <section class="case-sec sew">
+        <h2>How it works</h2>
+        <div>
+          <p>The IR sensors detect a person or an obstacle ahead. Based on their signals, the Arduino tells the motor driver to move forward, stop or turn, so the robot responds straight away to where the person is. A rear caster wheel keeps the turns smooth.</p>
+          <figure class="figure">
+            <svg class="diagram" viewBox="0 0 960 420" role="img" aria-labelledby="dg-t">
+  <title id="dg-t">Block diagram: the Arduino UNO reads two IR sensors and drives two DC motors through the motor driver module, with a 12V battery on each side</title>
+  <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#161616"/></marker></defs>
+  <g fill="none" stroke="#161616" stroke-width="2" marker-end="url(#ah)">
+    <path d="M300 210 H262"/><path d="M262 210 V82 H190"/><path d="M262 210 H190"/><path d="M262 210 V338 H190"/>
+    <path d="M552 210 H470" marker-end="none"/><path d="M470 210 H452"/>
+    <path d="M660 210 H698"/><path d="M698 210 V82 H770"/><path d="M698 210 H770"/><path d="M698 210 V338 H770"/>
+  </g>
+  <g font-family="Instrument Sans, sans-serif" font-size="17" font-weight="600" fill="#161616" text-anchor="middle">
+    <g><rect x="40" y="52" width="150" height="60" rx="4" fill="#f7f4ec" stroke="#161616" stroke-width="1.5"/><text x="115" y="88">DC motor</text></g>
+    <g><rect x="40" y="180" width="150" height="60" rx="4" fill="#f7f4ec" stroke="#161616" stroke-width="1.5"/><text x="115" y="216">12V battery</text></g>
+    <g><rect x="40" y="308" width="150" height="60" rx="4" fill="#f7f4ec" stroke="#161616" stroke-width="1.5"/><text x="115" y="344">DC motor</text></g>
+    <g><rect x="300" y="172" width="152" height="76" rx="4" fill="#161616"/><text x="376" y="205" fill="#f7f4ec">Motor driver</text><text x="376" y="228" fill="#f7f4ec" font-weight="500" font-size="14">L298N</text></g>
+    <g><rect x="552" y="172" width="108" height="76" rx="4" fill="#2230ff"/><text x="606" y="205" fill="#f7f4ec">Arduino</text><text x="606" y="228" fill="#f7f4ec" font-weight="500" font-size="14">UNO</text></g>
+    <g><rect x="770" y="52" width="150" height="60" rx="4" fill="#f7f4ec" stroke="#161616" stroke-width="1.5"/><text x="845" y="88">IR sensor</text></g>
+    <g><rect x="770" y="180" width="150" height="60" rx="4" fill="#f7f4ec" stroke="#161616" stroke-width="1.5"/><text x="845" y="216">12V battery</text></g>
+    <g><rect x="770" y="308" width="150" height="60" rx="4" fill="#f7f4ec" stroke="#161616" stroke-width="1.5"/><text x="845" y="344">IR sensor</text></g>
+  </g>
+  <rect x="12" y="12" width="936" height="396" rx="2" fill="none" stroke="rgba(22,22,22,0.22)" stroke-width="1.5" stroke-dasharray="9 6"/>
+</svg>
+            <figcaption>Block diagram. The Arduino reads both IR sensors and drives the motors through the L298N.</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="case-sec sew">
+        <h2>Prototype</h2>
+        <div class="photos">
+            <img src="../assets/images/projects/hfr/hfr2.jpg" alt="The prototype robot, view 1" width="627" height="836" loading="lazy" decoding="async">
+            <img src="../assets/images/projects/hfr/hfr3.jpg" alt="The prototype robot, view 2" width="627" height="836" loading="lazy" decoding="async">
+            <img src="../assets/images/projects/hfr/hfr4.jpg" alt="The prototype robot, view 3" width="627" height="836" loading="lazy" decoding="async">
+        </div>
+      </section>
+      <section class="case-sec sew">
+        <h2>What I learned</h2>
+        <ul class="ticks">
+            <li>Arduino programming and real-time decisions.</li>
+            <li>Motor control with the L298N driver.</li>
+            <li>Sensor-based robotics and obstacle logic.</li>
+            <li>Hands-on hardware integration and wiring.</li>
+            <li>Designing prototypes that work in the real world.</li>
+        </ul>
+      </section>
+    </div>
+
+    <a class="next-case" href="attendance.html"><small>Next project · 04</small><b>Attendance Tracker<i aria-hidden="true">→</i></b></a>
+  </main>
+
+  <footer class="foot">
+    <span>Designed and built by Venkata Sai Charan Cheedella · © 2026</span>
+    <div class="row">
+      <a href="../#work">All work</a>
+      <a href="../#contact">Contact</a>
+      <a href="https://github.com/charancheedella" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </footer>
+
+  <script type="module" src="../assets/js/case.js"></script>
 </body>
 </html>

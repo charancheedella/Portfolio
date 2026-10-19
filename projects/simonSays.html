@@ -1,159 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1EEJ1DXKJK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-1EEJ1DXKJK');
-</script>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Primary Title & Description -->
-  <title>Simon Says Game – Charan Cheedella</title>
-  <meta name="description" content="Simon Says Game – A fun and interactive memory challenge built using HTML, CSS, and JavaScript by Charan Cheedella.">
-
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://www.charancheedella.xyz/projects/simonSays.html" />
-
-  <!-- Open Graph / Social Sharing -->
-  <meta property="og:title" content="Simon Says Game – Charan Cheedella" />
-  <meta property="og:description" content="A fun and interactive memory game where you repeat color sequences to test your memory and reflexes!" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.charancheedella.xyz/projects/simonSays.html" />
-  <meta property="og:image" content="https://www.charancheedella.xyz/images/simonsayscard.png" />
-  <meta property="og:image:alt" content="Simon Says Game by Charan Cheedella" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Simon Says Game – Charan Cheedella" />
-  <meta name="twitter:description" content="A fun memory-based Simon Says game built using HTML, CSS, and JavaScript." />
-  <meta name="twitter:image" content="https://www.charancheedella.xyz/images/simonsayscard.png" />
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "CreativeWork",
-    "name": "Simon Says Game",
-    "creator": {
-      "@type": "Person",
-      "name": "Charan Cheedella",
-      "url": "https://www.charancheedella.xyz"
-    },
-    "description": "An interactive Simon Says memory game built using HTML, CSS, and JavaScript. Test your reflexes by repeating random color sequences that increase in difficulty!",
-    "url": "https://charancheedella.github.io/Simon-Says-Game/",
-    "image": "https://www.charancheedella.xyz/images/simonsayscard.png",
-    "keywords": "Simon Says Game, JavaScript Game, Memory Game, Charan Cheedella"
-  }
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1EEJ1DXKJK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-1EEJ1DXKJK');
   </script>
 
-  <!-- Fonts & Icons -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Simon Says · Charan Cheedella</title>
+  <meta name="description" content="The colour-sequence memory game, rebuilt for the browser. Every round adds one more colour.">
+  <meta name="author" content="Venkata Sai Charan Cheedella">
+  <meta name="theme-color" content="#e9e5dc">
+  <link rel="canonical" href="https://www.charancheedella.xyz/projects/simonSays.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Charan Cheedella">
+  <meta property="og:title" content="Simon Says · Charan Cheedella">
+  <meta property="og:description" content="The colour-sequence memory game, rebuilt for the browser. Every round adds one more colour.">
+  <meta property="og:url" content="https://www.charancheedella.xyz/projects/simonSays.html">
+  <meta property="og:image" content="https://www.charancheedella.xyz/assets/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/icons/site.webmanifest">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!-- Styles -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="stylesheet" href="../assets/css/pro.css">
-  <link rel="stylesheet" href="../assets/css/projects.css">
-
-  <!-- Optional SEO Enhancements -->
-  <meta name="robots" content="index, follow" />
-  <meta name="author" content="Venkata Sai Charan Cheedella" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
-  <link rel="manifest" href="/assets/icons/site.webmanifest">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
 </head>
+<body data-page="case">
+  <a class="skip" href="#content">Skip to content</a>
 
-<body>
-<div id="cursor-glow"></div>
+  <header class="top">
+    <a class="brand" href="../" aria-label="Charan Cheedella, home">Charan Cheedella</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="../#about">About</a>
+      <a href="../#work">Work</a>
+      <a href="../#leadership">Leadership</a>
+      <a href="../#journey">Journey</a>
+      <a href="../#testimonials">Testimonials</a>
+      <a href="../#contact">Contact</a>
+    </nav>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="sheet"><span>Menu</span><b aria-hidden="true"></b></button>
+  </header>
 
-<!-- nav bar -->
-<header class="nav-bar">
-  <!-- Desktop Nav -->
-  <div class="outer-nav desktop-nav">
-    <a href="../index.html#project-sec" class="nav-sections">Back to Home</a>
-    <a href="../pro.html" class="nav-sections">All Projects</a>
-  </div>
-
-  <!-- Mobile Nav -->
-  <div class="mobile-nav">
-    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
-    <a href="../index.html#" class="logo">
-      <img src="../assets/images/brand/logo.png" alt="Charan Logo">
-    </a>
-    <div class="mobile-menu">
-      <a href="../index.html#" class="nav-sections">Home</a>
-      <a href="../index.html#about-sec" class="nav-sections">About me</a>
-      <a href="../index.html#skill-sec" class="nav-sections">Skills</a>
-      <a href="../index.html#project-sec" class="nav-sections">Projects</a>
-      <a href="../index.html#leadership-sec" class="nav-sections">Leadership</a>
-      <a href="../index.html#journey-sec" class="nav-sections">Journey</a>
-      <a href="../index.html#testimonial-sec" class="nav-sections">Testimonials</a>
-      <a href="../index.html#contact" class="nav-sections">Contact</a>
+  <div class="sheet" id="sheet">
+    <ol>
+      <li><a href="../#about">About</a></li>
+      <li><a href="../#work">Work</a></li>
+      <li><a href="../#leadership">Leadership</a></li>
+      <li><a href="../#journey">Journey</a></li>
+      <li><a href="../#testimonials">Testimonials</a></li>
+      <li><a href="../#contact">Contact</a></li>
+    </ol>
+    <div class="sheet-foot">
+      <a href="mailto:charancheedella012@gmail.com">charancheedella012@gmail.com</a>
+      <div class="row">
+        <a href="https://www.linkedin.com/in/charan-cheedella" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/charancheedella" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://wa.me/918309348490" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
     </div>
   </div>
-</header>
 
-<!-- back buttons -->
-<div class="backbuttonspro">
-  <a href="../index.html#project-sec" class="nav-items">Back to Home</a>
-  <a href="../pro.html" class="nav-items">All Projects</a>
-</div>
+  <main id="content">
+    <section class="case-hero">
+      <div>
+        <a class="back" href="../#work">← All work</a>
+        <h1>Simon Says</h1>
+        <p class="lede">The colour-sequence memory game, rebuilt for the browser. Every round adds one more colour.</p>
+        <ul class="case-meta">
+          <li><span>No.</span><span>06 of 07</span></li>
+          <li><span>Type</span><span>Game</span></li>
+          <li><span>Built with</span><span>HTML5 · CSS3 · JavaScript</span></li>
+          <li><span>Status</span><span>Live</span></li>
+        </ul>
+          <div class="case-actions"><a class="btn solid" href="https://charancheedella.github.io/Simon-Says-Game/" target="_blank" rel="noopener">Open the live site ↗</a><a class="btn" href="https://github.com/charancheedella/Simon-Says-Game" target="_blank" rel="noopener">View code ↗</a></div>
+      </div>
+      <div class="swatch cloth-host" id="swatch" data-color="#d6bf94" data-num="06" data-name="Simon Says" data-kind="Game" data-ink>
+        <canvas id="swatch-cloth" aria-hidden="true"></canvas>
+        <div class="rod thin" id="swatch-rod"></div>
+      </div>
+    </section>
 
-<p class="uq-main-heading">Simon Says Game</p>
+    <div class="case-body c-kraft">
+      <section class="case-sec sew">
+        <h2>The idea</h2>
+        <p>A memory game built with HTML, CSS and JavaScript. The game flashes a sequence of colours and you repeat it. Every correct round adds one more colour, so it tests your focus a little more each time.</p>
+      </section>
 
-<div class="uq-container">
-  <section class="uq-section">
-    <h3>Over View</h3>
-    <p>A fun and interactive memory-based game built using HTML, CSS, and JavaScript. The player must repeat the sequence of colors shown by the game. Each correct round increases the difficulty by adding one more color to the sequence, testing the player’s focus and memory.</p>
-  </section>
+      <section class="case-sec sew">
+        <h2>What it does</h2>
+        <ul class="ticks">
+            <li>A start button to begin and restart.</li>
+            <li>A sequence that grows by one each round.</li>
+            <li>Interactive colour pads with smooth animations.</li>
+            <li>Level and high score tracking.</li>
+            <li>A simple, responsive layout.</li>
+        </ul>
+      </section>
 
-  <section class="uq-section">
-    <h3>Features</h3>
-    <ul>
-      <li>Start button to begin and restart the game.</li>
-      <li>Dynamic sequence generation that increases each round.</li>
-      <li>Interactive color pads with smooth animations.</li>
-      <li>Level and high score tracking for progress.</li>
-      <li>Simple and responsive design for web use.</li>
-    </ul>
-  </section>
+      <section class="case-sec sew">
+        <h2>Built with</h2>
+        <ul class="chips">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+        </ul>
+      </section>
 
-  <section class="uq-section">
-    <h3>Tech Stack</h3>
-    <ul>
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>JavaScript</li>
-    </ul>
-  </section>
+      <section class="case-sec sew">
+        <h2>What I learned</h2>
+        <ul class="ticks">
+            <li>Writing game logic in JavaScript.</li>
+            <li>Handling user events and validating the sequence.</li>
+            <li>Structuring code cleanly for a small web game.</li>
+        </ul>
+      </section>
+    </div>
 
-  <section class="uq-section">
-    <h3>What I Learnt</h3>
-    <ul>
-      <li>Implementing game logic using JavaScript.</li>
-      <li>Managing user events and sequence validation.</li>
-      <li>Structuring code efficiently for small-scale web games.</li>
-    </ul>
-  </section>
+    <a class="next-case" href="crop.html"><small>Next project · 07</small><b>Crop Vision<i aria-hidden="true">→</i></b></a>
+  </main>
 
-  <section class="uq-section">
-    <h3>Live Demo</h3>
-    <a href="https://charancheedella.github.io/Simon-Says-Game/" target="_blank">https://charancheedella.github.io/Simon-Says-Game/</a>
-  </section>
-</div>
+  <footer class="foot">
+    <span>Designed and built by Venkata Sai Charan Cheedella · © 2026</span>
+    <div class="row">
+      <a href="../#work">All work</a>
+      <a href="../#contact">Contact</a>
+      <a href="https://github.com/charancheedella" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </footer>
 
-</div>
-
-<script src="../assets/js/app.js"></script>
+  <script type="module" src="../assets/js/case.js"></script>
 </body>
 </html>
