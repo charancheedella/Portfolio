@@ -42,26 +42,34 @@ const observerOptions = {
   threshold: 0
 };
 
+// Sections can be nested (testimonials sit inside journey), so track every visible
+// section and highlight the one that comes last in the document - the innermost.
+targetSections.sort((a, b) => a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1);
+const visibleSections = new Set();
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      let currentId = entry.target.getAttribute("id");
-      
-      navLinks.forEach(link => {
-        link.classList.remove("active");
-        
-        let href = link.getAttribute("href");
-        if (!href) return;
-        
-        // Handle Home link
-        if (currentId === "home-sec" && (href === "#" || href === "index.html#")) {
-          link.classList.add("active");
-        } 
-        // Handle other links
-        else if (currentId && href.includes("#" + currentId) && currentId !== "home-sec") {
-          link.classList.add("active");
-        }
-      });
+    if (entry.isIntersecting) visibleSections.add(entry.target);
+    else visibleSections.delete(entry.target);
+  });
+
+  const current = targetSections.filter(sec => visibleSections.has(sec)).pop();
+  if (!current) return;
+  let currentId = current.getAttribute("id");
+
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+
+    let href = link.getAttribute("href");
+    if (!href) return;
+
+    // Handle Home link
+    if (currentId === "home-sec" && (href === "#" || href === "index.html#")) {
+      link.classList.add("active");
+    }
+    // Handle other links
+    else if (currentId && href.endsWith("#" + currentId) && currentId !== "home-sec") {
+      link.classList.add("active");
     }
   });
 }, observerOptions);

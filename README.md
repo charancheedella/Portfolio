@@ -27,9 +27,34 @@ Welcome to my personal portfolio website! This site highlights who I am, what I 
   - Project Gallery (`/projects`)
   - Contact
 - Organized project pages (`pro.html`, `/projects/`)
+- Leadership section (CSE Clubs Council, Just Between Us)
 - Favicon support for branding
 - Custom domain: `charancheedella.xyz`
 - Deployed via GitHub Pages
+
+---
+
+## 📁 Folder Structure
+
+```
+├── index.html            # home page
+├── pro.html              # all projects
+├── projects/             # one page per project
+├── assets/
+│   ├── css/              # style.css (site), pro.css (all projects), projects.css (project pages)
+│   ├── js/app.js         # nav, scrollspy, testimonials carousel, animations
+│   ├── icons/            # favicons + site.webmanifest
+│   └── images/
+│       ├── brand/        # site logo
+│       ├── hero/         # hero photos
+│       ├── backgrounds/  # section backgrounds
+│       ├── skills/       # skill images
+│       ├── projects/     # project cards + per-project images
+│       ├── leadership/   # CCC & JBU logos
+│       └── ui/           # small UI icons
+├── favicon.ico           # kept at root for browsers
+└── CNAME                 # custom domain
+```
 
 ---
 
